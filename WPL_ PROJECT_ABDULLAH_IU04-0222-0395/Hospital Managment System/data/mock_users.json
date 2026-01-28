@@ -1,0 +1,95 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "full_name": "System Administrator",
+            "email": "admin@hospital.com",
+            "password": "Admin@123",
+            "status": "active",
+            "roles": [
+                "admin"
+            ],
+            "phone": null,
+            "failed_login_attempts": 0,
+            "last_login_at": "2025-12-27 17:44:33"
+        },
+        {
+            "id": 2,
+            "full_name": "Fatima Ali",
+            "email": "receptionist@hospital.com",
+            "password": "Receptionist@123",
+            "status": "active",
+            "roles": [
+                "receptionist"
+            ],
+            "phone": "0101_0001",
+            "failed_login_attempts": 0,
+            "last_login_at": "2025-12-27 17:15:39"
+        },
+        {
+            "id": 3,
+            "full_name": "Dr. Ahmed Khan",
+            "email": "doctor@hospital.com",
+            "password": "Doctor@123",
+            "status": "active",
+            "roles": [
+                "doctor"
+            ],
+            "phone": "0102_0002",
+            "failed_login_attempts": 0,
+            "last_login_at": "2025-12-27 17:12:46"
+        },
+        {
+            "id": 4,
+            "full_name": "Ayesha Malik",
+            "email": "lab@hospital.com",
+            "password": "LabTech@123",
+            "status": "active",
+            "roles": [
+                "lab_technician"
+            ],
+            "phone": "0103_0003",
+            "failed_login_attempts": 0,
+            "last_login_at": "2025-12-27 17:12:54"
+        },
+        {
+            "id": 5,
+            "full_name": "Hassan Raza",
+            "email": "pharmacist@hospital.com",
+            "password": "Pharmacist@123",
+            "status": "active",
+            "roles": [
+                "pharmacist"
+            ],
+            "phone": "0104_0004",
+            "failed_login_attempts": 0,
+            "last_login_at": null
+        },
+        {
+            "id": 6,
+            "full_name": "Locked User",
+            "email": "locked@hospital.com",
+            "password": "Locked@123",
+            "status": "locked",
+            "roles": [
+                "receptionist"
+            ],
+            "phone": null,
+            "failed_login_attempts": 5,
+            "last_login_at": null
+        },
+        {
+            "id": 7,
+            "full_name": "Inactive User",
+            "email": "inactive@hospital.com",
+            "password": "Inactive@123",
+            "status": "inactive",
+            "roles": [
+                "doctor"
+            ],
+            "phone": null,
+            "failed_login_attempts": 0,
+            "last_login_at": null
+        }
+    ]
+}

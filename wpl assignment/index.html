@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bio Data Form</title>
+ 
+
+</head>
+<body>
+
+  <h2>Bio Data Form</h2>
+
+  <form id="bioForm">
+    <label>Full Name:</label>
+    <input type="text" id="name" required>
+
+    <label>Age:</label>
+    <input type="number" id="age" required>
+
+    <label>Email:</label>
+    <input type="email" id="email" required>
+
+    <label>Address:</label>
+    <input type="address" id="address" required>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    const form = document.getElementById('bioForm');
+    const inputs = form.querySelectorAll('input, textarea');
+
+    form.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        const currentIndex = Array.from(inputs).indexOf(e.target);
+        if (currentIndex !== -1 && currentIndex < inputs.length - 1) {
+          inputs[currentIndex + 1].focus();
+        }
+      }
+    });
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      let biodataList = JSON.parse(localStorage.getItem('biodataList')) || [];
+
+      const newData = {
+        name: document.getElementById('name').value,
+        age: document.getElementById('age').value,
+        email: document.getElementById('email').value,
+        address: document.getElementById('address').value
+      };
+
+      biodataList.push(newData);
+      localStorage.setItem('biodataList', JSON.stringify(biodataList));
+
+      window.location.href = 'table.html';
+    });
+  </script>
+
+</body>
+</html>
